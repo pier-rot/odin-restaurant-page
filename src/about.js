@@ -37,8 +37,8 @@ function makeAbout() {
         email.setAttribute("class", "member-email");
         teamMember.appendChild(email);
 
-        role.innerText = `${team[i].firstname} ${team[i].lastname}`;
-        name.innerText = `${team[i].role}`;
+        name.innerText = `${team[i].firstname} ${team[i].lastname}`;
+        role.innerText = `${team[i].role}`;
         email.innerText = `contact : ${team[i].email}`;
     }
 
