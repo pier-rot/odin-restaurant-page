@@ -25,7 +25,5 @@ function fillContent(div=homeDiv) {
     emptyContent();
     contentDiv.appendChild(div);
 }
-emptyContent();
+// By default, fill page with the homeDiv on reload
 fillContent();
-// By default the content is filled with the home tab.
-// contentDiv.appendChild(homeDiv);
