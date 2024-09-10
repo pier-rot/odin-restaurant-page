@@ -21,10 +21,11 @@ function emptyContent() {
     contentDiv.innerHTML = "";
 };
 
-function fillContent(div) {
+function fillContent(div=homeDiv) {
     emptyContent();
     contentDiv.appendChild(div);
 }
 emptyContent();
+fillContent();
 // By default the content is filled with the home tab.
 // contentDiv.appendChild(homeDiv);
