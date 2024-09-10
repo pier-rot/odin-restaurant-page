@@ -1,0 +1,5 @@
+function makeContact() {
+
+};
+
+export {makeContact};
