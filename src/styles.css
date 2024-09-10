@@ -129,14 +129,15 @@ button {
   font-size: 1.25rem;
   padding: 0.25rem 0.5rem;
   font-family: var(--norse-bold);
-
+  border-radius: 1.5rem;
+  padding: 0.25rem 1rem;
 }
 
 #bookBtn {
   border: solid var(--hl-bgc) 2px;
 }
 
-#bookBtn:hover {
+button:hover {
   background-color: var(--hl-bgc);
 }
 
