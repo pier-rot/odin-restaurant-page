@@ -146,7 +146,6 @@ button {
   display: flex;
 }
 
-/* home styling */
 #container {
   display: flex;
   flex-direction: column;
