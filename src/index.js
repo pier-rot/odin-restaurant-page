@@ -6,18 +6,25 @@ import { makeMenu } from "./menu";
 import { makeReservation } from "./reservation";
 
 
+// Create the containers that will be put in the content
 const homeDiv = makeHome();
 const aboutDiv = makeAbout();
 const contactDiv = makeContact();
 const menuDiv = makeMenu();
 const reservationDiv = makeReservation();
-const containerDiv = document.getElementById("container");
 
-function emptyContainer() {
-    // Remove the contents of the main container (containerDiv).
-    containerDiv.innerHTML = "";
+// Selecting the content div
+const contentDiv = document.getElementById("content");
+
+function emptyContent() {
+    // Remove the contents of the main content (containerDiv).
+    contentDiv.innerHTML = "";
 };
 
-
-// By default the container is filled with the home tab.
-containerDiv.appendChild(homeDiv);
+function fillContent(div) {
+    emptyContent();
+    contentDiv.appendChild(div);
+}
+emptyContent();
+// By default the content is filled with the home tab.
+// contentDiv.appendChild(homeDiv);
