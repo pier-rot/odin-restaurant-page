@@ -94,7 +94,7 @@ h6 {
     --red: #f00;
 
 
-    background-color: var(--bcg);
+    background-image: linear-gradient(to top,var(--border-color-1), var(--bcg));
     color: var(--text-color);
 }
 
@@ -113,12 +113,12 @@ header {
 }
 
 nav {
-    border-bottom: double var(--border-color-1) 4px;
+    border-bottom: solid var(--border-color-1) 4px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
-    gap: 0rem;
+    gap: 3rem;
     flex: 1;
 }
 
@@ -128,7 +128,6 @@ button {
   color: inherit;
   font-size: 1.25rem;
   padding: 0.25rem 0.5rem;
-  font-size: 2rem;
   font-family: var(--norse-bold);
 
 }
@@ -144,8 +143,6 @@ button {
 /* Common styling for content */
 
 #content {
-  border: dotted var(--border-color-1) 4px;
-  border-top: none;
   flex: 1;  
   display: flex;
 }
