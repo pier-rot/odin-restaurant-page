@@ -25,5 +25,20 @@ function fillContent(div=homeDiv) {
     emptyContent();
     contentDiv.appendChild(div);
 }
+
+
+const homeBtn = document.querySelector("#homeBtn");
+const aboutBtn = document.querySelector("#aboutBtn");
+const menuBtn = document.querySelector("#menuBtn");
+const contactBtn = document.querySelector("#contactBtn");
+const bookBtn = document.querySelector("#bookBtn");
+
+homeBtn.addEventListener("click",() => {fillContent()});
+aboutBtn.addEventListener("click",() => {fillContent(aboutDiv)});
+menuBtn.addEventListener("click",() => {fillContent(menuDiv)});
+contactBtn.addEventListener("click", () => {fillContent(contactDiv)});
+bookBtn.addEventListener("click", makeReservation);
+
+
 // By default, fill page with the homeDiv on reload
 fillContent();
