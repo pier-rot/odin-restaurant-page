@@ -1,5 +1,0 @@
-function makeReservation() {
-
-};
-
-export {makeReservation};
