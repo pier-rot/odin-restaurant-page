@@ -88,12 +88,15 @@ body {
   border: var(--border-color-1) solid 4px;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 0;
 }
 
 nav {
@@ -120,4 +123,11 @@ button {
 
 #bookBtn:hover {
   background-color: var(--hl-bgc);
+}
+
+/* Common styling for content */
+
+#content {
+  border: dashed var(--border-color-1) 4px;
+  flex: 1;  
 }
