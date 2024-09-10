@@ -93,8 +93,8 @@ h6 {
     --secondary: #152827;
     --red: #f00;
 
-
-    background-image: linear-gradient(to top,var(--border-color-1), var(--bcg));
+    font-size: 20px;
+    background-image: linear-gradient(to bottom,var(--border-color-1), var(--bcg));
     color: var(--text-color);
 }
 
@@ -133,7 +133,7 @@ button {
 }
 
 #bookBtn {
-  border: solid var(--border-color-1) 2px;
+  border: solid var(--hl-bgc) 2px;
 }
 
 #bookBtn:hover {
